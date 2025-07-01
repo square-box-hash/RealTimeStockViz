@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Checker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Real-Time Stock Checker</h1>
+        <form id="stockForm">
+            <input type="text" id="symbol" placeholder="Enter Stock Symbol (e.g. AAPL)" required />
+            <button type="submit">Check Stock</button>
+        </form>
+        <div class="tip">
+            US stocks: Enter symbol (e.g. <b>AAPL</b>, <b>GOOGL</b>)<br>
+            Non-US stocks: Enter full symbol format (e.g. <b>INFY:BSE</b>, <b>SONY:TYO</b>)
+        </div>
+        <div id="error" class="error"></div>
+        <canvas id="stockChart"></canvas>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
